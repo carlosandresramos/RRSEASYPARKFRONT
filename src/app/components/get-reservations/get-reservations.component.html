@@ -1,0 +1,24 @@
+<app-sive-nav-client>
+    <div class="space"><app-combo></app-combo></div>
+    <div class="title">
+        <h1>{{'get-reservation.RE' | transloco }}
+        </h1>
+      </div>
+    <ol id="lista5">
+        <li class="centrar" *ngFor="let reservation of list">
+            <div>
+                <p>{{'reservation.FE' | transloco }} {{reservation.date}}</p>
+                <p>{{'reservation.HOI' | transloco }}  {{reservation.startTime}}</p>
+                <p>{{'reservation.HOF' | transloco }}  {{reservation.endTime}}</p>
+                <p>{{'get-reservation.parqueadero' | transloco }}: {{reservation.parkingLotName}}</p>
+                <p>{{'ParkingLot.DIR' | transloco }}: {{reservation.adress}}</p>
+            </div>
+            <button class="custom-button" (click)="openConfirmDialog(reservation.id)">{{'get-reservation.cancelar' | transloco }}</button>
+        </li>
+    </ol>
+    <div class="label">
+        <label *ngIf="list && list.length === 0">{{'get-reservation.ningun' | transloco }}</label>
+    </div>
+    
+</app-sive-nav-client>
+

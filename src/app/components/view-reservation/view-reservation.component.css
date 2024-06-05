@@ -1,0 +1,33 @@
+.br{
+  margin-left: 8px;
+}
+.br2{
+  display: flex; 
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container {
+    margin: 0% 15% 0% 10%;
+  }
+  .example-button-container {
+
+    justify-content: center;
+    width: 140px;
+    margin-bottom: 15px;
+  }
+ 
+  table {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .paginator{
+    width: 100%;
+  }
+  .title{
+    margin-top: 10px;
+  }
+  .space{
+    text-align: right;
+    margin-top: 22px;
+    margin-right: 10px;
+  }

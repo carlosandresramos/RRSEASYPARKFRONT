@@ -1,0 +1,60 @@
+
+<mat-toolbar color="primary" class="mattoolbar1">
+    <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <h1>RRS EASYPARK</h1>
+    <div class="user-info">
+        <span>
+            {{'sive-nav.hola' | transloco }},
+            {{this.user?.Name | titlecase}}
+        </span>
+        <button mat-icon-button [matMenuTriggerFor]="userMenu">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+    </div>
+
+    <mat-menu #userMenu="matMenu">
+        <button mat-menu-item (click)="logOut()">
+            <mat-icon>logout</mat-icon>
+            <span>{{'sive-nav.cerrar' | transloco }}</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
+<mat-drawer-container class="example-container">
+    <mat-drawer #drawer mode="side" opened class="custom-drawer">
+        <mat-list role="list">
+            <mat-list-item role="listitem" routerLink="/ViewParkingLot" routerLinkActive="active" class="menu-item">
+                <div class="icon-container">
+                    <mat-icon class="icon-blue" aria-hidden="false" aria-label="Example home icon" fontIcon="list"></mat-icon>
+                    {{'sive-nav.reservas' | transloco }}
+                  </div>
+            </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/RegisterParkingLot" routerLinkActive="active" class="menu-item">
+                <div class="icon-container">
+                    <mat-icon class="icon-blue" aria-hidden="false" aria-label="Example home icon" fontIcon="app_registration"></mat-icon>
+                    {{'sive-nav.registrarPark' | transloco }}
+                  </div>
+            </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/View" routerLinkActive="active" class="menu-item">
+                <div class="icon-container">
+                    <mat-icon class="icon-blue" aria-hidden="false" aria-label="Example home icon" fontIcon="edit"></mat-icon>
+                    {{'sive-nav.modificar' | transloco }}
+                  </div>
+            </mat-list-item>
+            <mat-list-item role="listitem" (click)="logOut()" class="menu-item">
+                <div class="icon-container">
+                    <mat-icon class="icon-blue" aria-hidden="false" aria-label="Example home icon" fontIcon="logout"></mat-icon>
+                    {{'sive-nav.cerrar' | transloco }}
+                  </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <ng-content></ng-content>
+    </mat-drawer-content>
+
+</mat-drawer-container>
+
+  
+

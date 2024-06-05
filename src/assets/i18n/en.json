@@ -1,0 +1,145 @@
+{ "msg": {
+    "E1": "We are",
+    "U1": "The purpose of RRS EasyPark is to implement a parking reservation system that provides an efficient and equitable solution for both regular and disabled people. The system will be designed to optimize the utilization of available parking space, ensuring that all people have access to adequate parking and guaranteeing the inclusion and comfort of people with disabilities. In addition, the system aims to improve the parking experience by reducing the stress and uncertainty associated with finding empty spaces!",
+    "welcome": "About us",
+    "mision": "MISSION",
+    "vision": "VISION",
+    "objetivos": "GENERAL OBJECTIVE",
+    "misiontext": "Facilitate the parking experience for all people, including those with disabilities, by providing an intuitive and accessible web application that allows them to locate and reserve parking spaces near their destination quickly, securely and conveniently and accommodates their conditions and comfort.",
+    "visiontext": "To be the leading global parking reservation management platform, recognized for our excellence in accessibility and customer service. We aim to transform the way people approach parking, making it a seamless experience tailored to individual needs.",
+    "object": "Build a web application that is responsible for providing the location or manage the reservations made by normal and disabled people to the various parking lots near their destination, with the advantage of being able to do everything from the comfort of your home, or without any stress for the person.",
+    "unete": "JOIN",
+    "unetetext": "Imagine a hassle-free parking experience designed for everyone. Our innovative web-based application makes it easy to locate and reserve parking close to your destination, providing convenience at every step. Whether you're a general person or face physical conditions, our service takes the stress out of the search. From the tranquility of your home, you will be able to secure a space adapted to your needs. Join us and transform the way you experience urban mobility.",
+    "inicio": "Home",
+    "registrarse": "Register",
+    "iniciar": "Login"
+  },
+  "sive-nav": {
+    "reservas": "Reserves",
+    "registrarPark": "Register Parking",
+    "modificar": "Modify Parking Lots",
+    "cerrar": "Logout",
+    "hola": "Hi"
+  },
+  "register-parkinglot":{
+    "registrar": "Register Parking Lot",
+    "nombre": "Name",
+    "precio": "General Price",
+    "carro": "Spaces for Trolleys",
+    "discapacidados": "Preferred Spaces Disabled",
+    "si": "YES",
+    "no": "NO",
+    "servicios": "Disabled Services",
+    "direccion": "Adress",
+    "telefono": "Telephone",
+    "preciodiscapacitados": "Preferred Disabled Pricing",
+    "moto": "Motorcycle Spaces",
+    "ciudad": "City",
+    "foto": "Photo",
+    "info": "Parking Information",
+    "enviar": "Register"
+  },
+  "view-parkinLot": {
+    "parqueaderos": "PARKING LOTS",
+    "view": "View Reservations",
+    "ningun": "!!NO REGISTERED PARKING!!",
+    "modificar": "Modify"
+  },
+  "view-reservations": {
+    "reservas": "Reservations Scheduled",
+    "todo": "All reservations",
+    "elija": "Choose a date",
+    "nombre": "Name",
+    "telefono": "Telephone",
+    "precio": "Price",
+    "discapacitado": "Disabled",
+    "inicio": "Start Time",
+    "final": "Final Hour",
+    "fecha": "Date",
+    "items": "Items per Page"
+  },
+  "Login":{
+    "E1": "Login",
+    "US": "User",
+    "PA": "Password",
+    "OL": "Forgot your password?",
+    "E2": "Log In",
+    "NO": "Don't have an account?",
+    "RE": "Register",
+    "RE1": "REGISTER",
+    "IN": "HOME"
+  },
+  "register":{
+    "IN": "HOME",
+    "INS": "LOGIN",
+    "RE": "Register",
+    "CL": "CUSTOMER FOR PARKING LOTS",
+    "PR": "PARKING LOT OWNER",
+    "NOM": "Name",
+    "CO": "Email",
+    "ID": "Identification",
+    "TE": "Telephone",
+    "US": "User",
+    "PA": "Password",
+    "YA": "Already have an account?",
+    "E1": "Login",
+    "RG": "Register"
+  },
+  "ParkingLot":{
+    "BU": "FIND YOUR PARKING SPACE",
+    "SE": "Select a city:",
+    "TO": "All",
+    "TI": "Types of parking lots:",
+    "DI": "DISABLED",
+    "GE": "GENERAL",
+    "NOM": "Name",
+    "DIR": "Address",
+    "CI": "City",
+    "TE": "Telephone:",
+    "PR": "Price:",
+    "PRD": "Disabled Price:",
+    "RE": "Reservation",
+    "CO": "How to get there"
+  },
+  "sive-nav-client":{
+    "HO": "Hello,",
+    "BU": "Search Parking",
+    "VE": "See Reservations",
+    "CE": "Close Session"
+  },
+  "reservation":{
+    "RE": "Reservations",
+    "FE": "Date:",
+    "HOI": "Start time:",
+    "HOF": "Time fin:",
+    "TI": "Types of parking lots:",
+    "DI": "DISABLED",
+    "TIP": "Vehicle Type",
+    "AG": "Schedule",
+    "TE": "Telephone:",
+    "PR": "Price:",
+    "PRD": "Disabled Price:"
+  },
+  "get-reservation":{
+    "RE": "BOOKED RESERVATIONS",
+    "ningun": "NO RESERVATION SCHEDULED!",
+    "cancelar": "Cancel",
+    "parqueadero":  "Parking Lot"
+  },
+  "confirm":{
+    "RE": "Confirm",
+    "cancelar": "Cancel",
+    "aceptar": "Accept",
+    "mensaje":  "¿Are you sure you want to delete this reservation?"
+  },
+  "recover":{
+    "recover": "Recover Password",
+    "email": "Email Address"
+  },
+  "confirmP":{
+    "contraseña": "Password",
+    "confirmar": "Confirm Password",
+    "no": "Passwords do not match.",
+    "cambiar": "Change Password"
+  }
+}

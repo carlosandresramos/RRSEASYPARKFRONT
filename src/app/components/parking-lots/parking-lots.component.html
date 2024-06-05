@@ -1,0 +1,18 @@
+<app-side-nav>
+    <div class="space"><app-combo></app-combo></div>
+    <div class="title">
+        <h1>{{'view-parkinLot.parqueaderos' | transloco }}
+        </h1>
+      </div>
+    <div id="lista2-container">
+        <ol id="lista3">
+            <li class="centrar" *ngFor="let parking of list">
+                <div>
+                    <p>{{'register-parkinglot.nombre' | transloco }}: {{parking.name}}</p>
+                    <p>{{'register-parkinglot.direccion' | transloco }}: {{parking.adress}}</p>
+                </div>
+                <button class="modificar-btn" (click)="modify(parking)">{{'view-parkinLot.modificar' | transloco }}</button>
+            </li>       
+        </ol>
+    </div>
+</app-side-nav>

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Get rid of all default margins/paddings. Set typeface */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "lato", sans-serif;
+}
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 155vh;
+}
+
+.form {
+    margin-top: 30px;
+    background-color: white;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.inputContainer1 {
+    position: relative;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+
+   top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 90%;
+    border: 1px solid #7c4a75;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    position: relative;
+}
+
+.input2 {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 283px;
+    border: 1px solid #7c4a75;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+ }
+
+.input1 {
+    margin-top: 10px;
+    top: 0px;
+    left: 0px;
+    width: 97%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    border: 1px solid #7c4a75;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    box-sizing: border-box;
+
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #b4b6b9;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+    pointer-events: none;
+}
+.label2 {
+    position: absolute;
+    top: 50%; /* Alinea la etiqueta en el centro vertical */
+    transform: translateY(-50%); /* Alinea la etiqueta en el centro vertical */
+    left: 15px;
+    padding: 0 4px;
+    color: #b4b6b9;
+    font-size: 16px;
+    pointer-events: none; /* Evita que la etiqueta reciba eventos de clic */
+    transition: 0.5s;
+    z-index: 2;
+}
+.label1 {
+ 
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #b4b6b9;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 50px;
+
+}
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.submitBtn[disabled] {
+    opacity: 0.5; /* Cambia la opacidad para que parezca deshabilitado */
+    cursor: not-allowed;  /*Cambia el cursor a "no permitido" */
+}
+
+.submitBtn:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+}
+
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+}
+
+.input:focus {
+    border: 2px solid purple;
+}
+
+.input:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input1:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+}
+
+.input1:focus {
+    border: 2px solid purple;
+}
+
+.input1:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.inputContainer.half {
+    width: 45%;
+}
+
+.inputContainer.full {
+    width: 100%;
+}
+.inputContainer1.full {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    flex-wrap: wrap;
+    /* Esto permite que las columnas se "envuelvan" a la siguiente fila si no hay suficiente espacio */
+}
+
+.column {
+    flex: 0 0 48%;
+    /* Las columnas ocuparán el 48% del espacio disponible */
+}
+input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+  }
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+  .space{
+    text-align: right;
+    margin-top: 22px;
+    margin-right: 10px;
+  }

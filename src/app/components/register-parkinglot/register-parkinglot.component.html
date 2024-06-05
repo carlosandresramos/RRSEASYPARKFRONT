@@ -1,0 +1,91 @@
+<app-side-nav>
+    <div class="space"><app-combo></app-combo></div>
+    <div class="signupFrm">
+        <form [formGroup]="form" (ngSubmit)="AddParkingLot()" class="form">
+            <h1 class="title">{{'register-parkinglot.registrar' | transloco }}</h1>
+
+            <!-- Dividimos los campos en dos columnas -->
+            <div class="row">
+                <div class="column">
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="name" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.nombre' | transloco }}</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="nit" placeholder="a">
+                        <label for="" class="label">NIT</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="normalPrice" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.precio' | transloco }}</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="cantSpacesCar" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.carro' | transloco }}</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="cantSpacesDisability" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.discapacidados' | transloco }}</label>
+                    </div>
+                    <div class="inputContainer">
+                        <select id="tipoVehiculo" class="input2" formControlName="disabilityservices" (change)="onSelectChange()">
+                            <option value="SI">{{'register-parkinglot.si' | transloco }}</option>
+                            <option value="NO">{{'register-parkinglot.no' | transloco }}</option>
+                        </select>
+                        <label for="tipoVehiculo" *ngIf="!select2" class="label2">{{'register-parkinglot.servicios' | transloco }}</label>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <!-- Agregamos los nuevos campos -->
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="adress" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.direccion' | transloco }}</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="telephone" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.telefono' | transloco }}</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="disabilityPrice" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.preciodiscapacitados' | transloco }}</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" class="input" formControlName="cantSpacesMotorcycle" placeholder="a">
+                        <label for="" class="label">{{'register-parkinglot.moto' | transloco }}</label>
+                    </div>
+                    <div class="inputContainer">
+                        <select id="tipoVehiculo" class="input2" formControlName="cityId" (change)="onSeleccionChange()">
+                            <option *ngFor="let City of ListCities" value={{City.id}}>{{City.name}}</option>
+                        </select>
+                        <label for="tipoVehiculo" *ngIf="!select" class="label2">{{'register-parkinglot.ciudad' | transloco }}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="inputContainer full">
+                <label for="" class="label1">{{'register-parkinglot.foto' | transloco }}: </label>
+                <input type="file" (change)="getImage($event,0)">
+            </div>
+
+            <!-- Agregamos el campo de imagen y texto largo -->
+            <div class="inputContainer1 full">
+                <textarea class="input1" formControlName="info" placeholder="a" cols="25" rows="5"></textarea>
+                <label for="" class="label">{{'register-parkinglot.info' | transloco }}</label>
+            </div>
+
+            <input type="submit" [disabled]="!form.valid" class="submitBtn" value="{{'register-parkinglot.enviar' | transloco }}">
+
+        </form>
+    </div>
+</app-side-nav>
+
+
+
+

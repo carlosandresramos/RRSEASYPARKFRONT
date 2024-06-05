@@ -1,0 +1,17 @@
+<app-side-nav>
+    <div class="space"><app-combo></app-combo></div>
+    <h1 class="title">{{'view-parkinLot.parqueaderos' | transloco }}</h1>
+    <div id="lista2-container">
+        <ol id="lista2">
+            <div *ngFor="let parking of list">
+                <li>{{ parking.name }}
+                    <button class="list-button" (click)="reserva(parking)">{{'view-parkinLot.view' | transloco }}</button>
+                </li>
+            </div>
+            <div class="label">
+                <label *ngIf="list && list.length === 0">{{'view-parkinLot.ningun' | transloco }}</label>
+            </div>
+        </ol>
+    </div>
+</app-side-nav>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="login" href="login.component.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<header>
+    <div class="container">
+        <p class="logo">RRS EASYPARK</p>
+        <nav>
+            <a routerLink="">{{'register.IN' | transloco }}</a>
+            <a routerLink="/Login">{{'register.INS' | transloco }}</a>
+        </nav>
+        <div class="space"><app-combo></app-combo></div>
+    </div>
+</header>
+<body>
+    <div class="wrapper">
+        <form [formGroup]="form" (ngSubmit)="register()">
+            <h1>{{'register.RE' | transloco }}</h1>
+            <div class="display">
+                <label for="tipoVehiculo" class="label2">Rol:</label>
+                <div class="select">
+                    <select name="format" id="format" formControlName="rol">
+                        <option value="" disabled selected>Rol</option>
+                        <option value="Client">{{'register.CL' | transloco }}</option>
+                        <option value="Propietary Park">{{'register.PR' | transloco }}</option>
+                    </select>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="input-box">
+                        <input type="text" formControlName="name" matInput placeholder="{{'register.NOM' | transloco }}">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" formControlName="email" matInput placeholder="{{'register.CO' | transloco }}">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <input type="text" formControlName="identification" matInput placeholder="{{'register.ID' | transloco }}">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" formControlName="telephone" matInput placeholder="{{'register.TE' | transloco }}">
+                    </div>
+                </div>
+
+            </div>
+
+            <h2>{{'register.US' | transloco }}</h2>
+
+            <div class="row">
+                <div class="column">
+                    <div class="input-box">
+                        <input type="text" formControlName="nameUser" matInput placeholder="{{'register.US' | transloco }}">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <input 
+                            type="{{ showPassword ? 'text' : 'password' }}" 
+                            [(ngModel)]="password" 
+                            formControlName="password"
+                            matInput 
+                            placeholder="{{'register.PA' | transloco }}"
+                            name="password">
+                        <button type="button" (click)="showPassword = !showPassword">
+                            <i class="bx" [ngClass]="showPassword ? 'bxs-show' : 'bxs-hide'"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" [disabled]="!form.valid" mat-raised-button class="btn">{{'register.RG' | transloco }}</button>
+
+            <div class="register-link">
+                <p>{{'register.YA' | transloco }} <a href="/Login">{{'register.E1' | transloco }}</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

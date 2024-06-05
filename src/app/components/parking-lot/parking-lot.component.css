@@ -1,0 +1,132 @@
+.br{
+  margin-top: 5px;
+}
+.buttons-container {
+  align-items: flex-end;
+
+
+}
+.buttons-container button {
+  margin-bottom: 10px; /* Espacio entre los botones */
+  
+}
+.container {
+  margin: 0 20%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las columnas */
+  align-items: flex-start; /* Alineación al inicio */
+  
+  /* Esto permite que las columnas se "envuelvan" a la siguiente fila si no hay suficiente espacio */
+}
+
+.column {
+ /* flex: 0 0 50%; /* No se expande, no se contrae, y tiene un ancho del 70% */
+ flex: 3;
+ min-width: 450px; /* Ancho mínimo de la columna de información */
+ flex-basis: 0; /* Permite que la columna se expanda */
+}
+.column2{
+  /*flex: 0 0 20%;  No se expande, no se contrae, y tiene un ancho del 30% */
+  flex: 1;
+}
+
+.titulo-parking {
+  text-align: justify;
+  word-spacing: 2px; /* Ajusta este valor según tus preferencias */
+}
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.description{
+  margin-top: 10px;
+}
+
+.info-line {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px; 
+  margin-left: 50px;
+}
+
+.info-line2 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px; 
+  margin-left: 50px;
+}
+
+.title h1{
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  font-family: Monospace, sans-serif; 
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #5a0553;
+}
+
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}
+.icon-blue {
+  color: blue; /* Cambia el color al que desees, en este caso, azul */
+}
+
+.image{
+  width: 230px;
+  height: 150px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.custom-paginator {
+  width: 100%; 
+  margin-bottom: 20px;
+}
+.space{
+  text-align: right;
+  margin-top: 22px;
+  margin-right: 10px;
+}
+

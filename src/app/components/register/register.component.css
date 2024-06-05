@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 125vh;
+    background: url('src\app\components\login\images\Fondo_Morado.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    margin-top: 100px;
+    width: 550px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #f7f3f3;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.945);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #f8f3f3;
+    padding: 20px 45px 20px 20px;
+    
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.label2{
+    margin-right: 70px;
+}
+
+.input-box input::placeholder {
+    color: #faf8f8;
+}
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: blueviolet;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 40px;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 23em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: 40px;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #eae7f1;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #a757cc;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #070707;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.input-box button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    flex-wrap: wrap;
+    /* Esto permite que las columnas se "envuelvan" a la siguiente fila si no hay suficiente espacio */
+}
+
+.column {
+    flex: 0 0 48%;
+    /* Las columnas ocuparán el 48% del espacio disponible */
+}
+
+h2{
+    margin-top: -20px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+header{
+    background: transparent;
+    width: 100%;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(166, 73, 253);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(250, 250, 250);
+}
+
+header a:hover{
+    color: rgb(117, 12, 223);
+}
+header{
+    width: 100%;
+    position: absolute;
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+.space{
+    text-align: right;
+    margin-top: 22px;
+    margin-right: 10px;
+  }

@@ -1,0 +1,13 @@
+select {
+    padding: 10px; /* Ajusta el relleno según lo desees */
+    font-size: 16px; /* Ajusta el tamaño de fuente según lo desees */
+    border: none;
+    border-radius: 5px;
+    background-color: #8b008b; /* Morado (#8b008b) */
+    color: white;
+  }
+  
+  option {
+    background-color: white; /* Fondo blanco para las opciones */
+    color: #8b008b; /* Color de texto morado (#8b008b) para las opciones */
+  }

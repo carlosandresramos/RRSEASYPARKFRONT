@@ -1,0 +1,149 @@
+{"msg": {
+    "E1": "Somos",
+    "U1": "El propósito de RRS EasyPark es implementar un sistema de reserva de parqueaderos que brinde una solución eficiente y equitativa tanto para personas normales como para personas discapacitadas. El sistema se diseñará para optimizar la utilización del espacio de estacionamiento disponible, asegurando que todas las personas tengan acceso a parqueaderos adecuados y garantizando la inclusión y comodidad de personas con discapacidades. Además, el sistema tiene como objetivo mejorar la experiencia de estacionamiento al reducir el estrés y la incertidumbre asociados con la búsqueda de espacios vacíos!",
+    "welcome": "Nosotros",
+    "mision": "MISIÓN",
+    "vision": "VISIÓN",
+    "objetivos": "OBJETIVO GENERAL",
+    "misiontext": "Facilitar la experiencia de estacionamiento para todas las personas, incluyendo aquellas con discapacidades, al proporcionar un aplicativo web intuitivo y accesible que permita localizar y reservar parqueaderos cercanos a su destino de manera rápida, segura y conveniente y se acomode a sus condiciones y comodidades.",
+    "visiontext": "Ser la plataforma líder a nivel global en la gestión de reservas de parqueaderos, reconocida por nuestra excelencia en accesibilidad y servicio al cliente. Aspiramos a transformar la manera en que las personas abordan el estacionamiento, convirtiéndolo en una experiencia sin complicaciones y adaptada a las necesidades individuales.",
+    "object": "Construir un aplicativo web que se encargue de brindar la ubicación o gestionar las reservas que hacen las personas normales y discapacitadas a los distintos parqueaderos cercanos a su lugar de destino, con la ventaja de poder hacer todo desde la comodidad de su casa, o sin ningún tipo de estrés para la persona.",
+    "unete": "UNETE",
+    "unetetext": "Imagina una experiencia de estacionamiento sin complicaciones, diseñada para todos. Nuestro innovador aplicativo web facilita la ubicación y reserva de parqueaderos cercanos a tu destino, brindando comodidad a cada paso. Ya sea que seas una persona en general o enfrentes condiciones físicas, nuestro servicio te libera del estrés de la búsqueda. Desde la tranquilidad de tu hogar, podrás asegurar un espacio adaptado a tus necesidades. Únete a nosotros y transforma la forma en que vives la movilidad urbana.",
+    "inicio": "Inicio",
+    "registrarse": "Registrarse",
+    "iniciar": "Iniciar Sesion"
+  },
+  "sive-nav": {
+    "reservas": "Reservas",
+    "registrarPark": "Registrar Parqueadero",
+    "modificar": "Modificar Parqueaderos",
+    "cerrar": "Cerrar Sesion",
+    "hola": "Hola"
+  },
+  "register-parkinglot":{
+    "registrar": "Registrar Parqueadero",
+    "nombre": "Nombre",
+    "precio": "Precio General",
+    "carro": "Espacios para Carro",
+    "discapacidados": "Espacios prefer. Discapacitados",
+    "si": "SI",
+    "no": "NO",
+    "servicios": "Servicio Discapacitados",
+    "direccion": "Dirección",
+    "telefono": "Telefono",
+    "preciodiscapacitados": "Precio Prefer. Discapacitados",
+    "moto": "Espacios para Moto",
+    "ciudad": "Ciudad",
+    "foto": "Foto",
+    "info": "Informacion del Parqueadero",
+    "enviar": "Registrar"
+  },
+  "view-parkinLot": {
+    "parqueaderos": "PARQUEADEROS",
+    "view": "Ver Reservas",
+    "ningun": "!!NINGUN PARQUEADERO REGISTRADO!!",
+    "modificar": "Modificar"
+  },
+
+  "view-reservations": {
+    "reservas": "Reservas Agendadas",
+    "todo": "Todas las reservas",
+    "elija": "Elija una fecha",
+    "nombre": "Nombre",
+    "telefono": "Telefono",
+    "precio": "Precio",
+    "discapacitado": "Discapacitado",
+    "inicio": "Hora Inicio",
+    "final": "Hora Final",
+    "fecha": "Fecha",
+    "items": "Items por Pagina"
+  },
+  "Login":{
+    "E1": "Iniciar Sesion",
+    "US": "Usuario",
+    "PA": "Contraseña",
+    "OL": "¿Olvidastes tu contraseña?",
+    "E2": "Iniciar Sesion",
+    "NO": "¿No tienes cuenta?",
+    "RE": "Registrarse",
+    "RE1": "REGISTRARSE",
+    "IN": "INICIO"
+  },
+  "register":{
+    "IN": "INICIO",
+    "INS": "INICIAR SESION",
+    "RE": "Registrarse",
+    "CL": "CLIENTE PARA PARQUEADEROS",
+    "PR": "PROPIETARIO DE PARQUEADERO",
+    "NOM": "Nombre",
+    "CO": "Correo",
+    "ID": "Identificación",
+    "TE": "Telefono",
+    "US": "Usuario",
+    "PA": "Contraseña",
+    "YA": "¿Ya tienes Cuenta?",
+    "E1": "Iniciar Sesion",
+    "RG": "Registrar"
+  },
+  "ParkingLot":{
+    "BU": "BUSCA TU PARQUEADERO",
+    "SE": "Seleccione una ciudad:",
+    "TO": "Todos",
+    "TI": "Tipos de parqueaderos:",
+    "DI": "DISCAPACITADOS",
+    "GE": "GENERAL",
+    "NOM": "Nombre",
+    "DIR": "Direccion",
+    "CI": "Ciudad",
+    "TE": "Telefono:",
+    "PR": "Precio:",
+    "PRD": "Precio Discapacitados:",
+    "RE": "Reservación",
+    "CO": "Como llegar"
+  },
+  "sive-nav-client":{
+    "HO": "Hola,",
+    "BU": "Buscar Parqueadero",
+    "VE": "Ver Reservas",
+    "CE": "Cerrar Sesion"
+  },
+  "reservation":{
+    "RE": "Reservas",
+    "FE": "Fecha:",
+    "HOI": "Hora inicio:",
+    "HOF": "Hora fin:",
+    "TI": "Tipos de parqueaderos:",
+    "DI": "DISCAPACITADOS",
+    "TIP": "Tipo de Vehiculo",
+    "AG": "Agendar",
+    "TE": "Telefono:",
+    "PR": "Precio:",
+    "PRD": "Precio Discapacitados:"
+  },
+  "get-reservation":{
+    "RE": "RESERVAS AGENDADAS",
+    "ningun": "!!NINGUNA RESERVA PROGRAMADA!!",
+    "cancelar": "Cancelar",
+    "parqueadero":  "Parqueadero"
+  },
+   "confirm":{
+    "RE": "Confirmar",
+    "cancelar": "Cancelar",
+    "aceptar": "Aceptar",
+    "mensaje":  "¿Estás seguro de que deseas eliminar esta reserva?"
+  },
+  "recover":{
+    "recover": "Recuperar Contraseña",
+    "email": "Correo Electronico"
+  },
+  "confirmP":{
+    "contraseña": "Contraseña",
+    "confirmar": "Confirmar Contraseña",
+    "no": "Las contraseñas no coinciden.",
+    "cambiar": "Cambiar Contraseña"
+  }
+
+
+
+}

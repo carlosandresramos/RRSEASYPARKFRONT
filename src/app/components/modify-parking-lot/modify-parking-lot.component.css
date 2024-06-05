@@ -1,0 +1,215 @@
+
+  @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.title{
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    font-family: Monospace, sans-serif; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #5a0553;
+  }
+
+.contact_form{  
+  width: 450px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 5px; 
+}
+
+select{
+    background-color: #fbfbfb; 
+    width: 422px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 5px; 
+  }
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+  max-width: 90%;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #ab4493; 
+  border-color: #ab4493; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #ab4493;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+.img{
+  width: 300px;
+  height: 150px;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+input[type=file] {
+  width: 408px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: blueviolet;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  flex-wrap: wrap;
+  /* Esto permite que las columnas se "envuelvan" a la siguiente fila si no hay suficiente espacio */
+}
+
+.column {
+  flex: 0 0 48%;
+  /* Las columnas ocuparán el 48% del espacio disponible */
+}
+
+.column input{
+  width: 170px;
+  /* Las columnas ocuparán el 48% del espacio disponible */
+}
+.column select{
+  width: 185px;
+  /* Las columnas ocuparán el 48% del espacio disponible */
+}
+.space{
+  text-align: right;
+  margin-top: 22px;
+  margin-right: 10px;
+}

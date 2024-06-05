@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RRS EASYPARK</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">RRS EASYPARK</p>
+            <nav>
+                <a routerLink="">{{'msg.inicio' | transloco }}</a>
+                <a routerLink="/Register">{{'msg.registrarse' | transloco }}</a>
+                <a routerLink="/Login">{{'msg.iniciar' | transloco }}</a>
+            </nav>
+        </div>
+    </header>
+ 
+   
+    <section id="somos-proya">
+        <div class="container2">
+            <app-combo></app-combo>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img src=".\assets\images\Logo.jpg" alt="">
+            </div>
+            <div class="texto">
+                <h2>{{'msg.E1' | transloco }} <span class="color-acento">RRS EASYPARK</span></h2>
+                <p>{{'msg.U1' | transloco }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>{{'msg.welcome' | transloco }}</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>{{'msg.mision' | transloco }}</h3>
+                    <p>{{'msg.misiontext' | transloco }}</p>
+                 
+                </div>
+                <div class="carta">
+                    <h3>{{'msg.vision' | transloco }}</h3>
+                    <p>{{'msg.visiontext' | transloco }}</p>
+                
+                </div>
+                <div class="carta">
+                    <h3>{{'msg.objetivos' | transloco }}</h3>
+                    <p>{{'msg.object' | transloco }}
+                    </p>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="caracteristicas">
+        <div class="contenedor">
+            <div class="texto">
+              <h2>{{'msg.unete' | transloco }}</h2>
+              <p>{{'msg.unetetext' | transloco }}</p>
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/EcyIzwYFydA?si=RAT4aTRfFaBU5D22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; RRS EASYPARK</p>
+        </div>
+    </footer>
+</body>
+</html>

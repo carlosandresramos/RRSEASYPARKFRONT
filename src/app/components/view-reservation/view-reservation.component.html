@@ -1,0 +1,74 @@
+<app-side-nav>
+  <div class="space"><app-combo></app-combo></div>
+  <div class="container">
+    <h1 class="title">{{'view-reservations.reservas' | transloco }} </h1>
+
+    <span class="br2">
+      {{'view-reservations.todo' | transloco }}:
+      <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon" (click)="quitarFiltroFecha()" class="br">
+        <mat-icon>filter_list</mat-icon>
+      </button>
+    </span>
+
+    <mat-form-field>
+        <mat-label>{{'view-reservations.elija' | transloco }}</mat-label>
+        <input matInput [matDatepicker]="picker" (dateChange)="onFechaSeleccionada($event)">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <br>
+
+    <table mat-table [dataSource]="dataSource">
+    
+         <!-- ID Column -->
+         <ng-container matColumnDef="Name">
+            <th mat-header-cell *matHeaderCellDef>{{'view-reservations.nombre' | transloco }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.clientName}} </td>
+        </ng-container>
+
+         <!-- ID Column -->
+         <ng-container matColumnDef="Telephone">
+            <th mat-header-cell *matHeaderCellDef>{{'view-reservations.telefono' | transloco }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.telephone}} </td>
+        </ng-container>
+
+        <!-- ID Column -->
+        <ng-container matColumnDef="Price">
+            <th mat-header-cell *matHeaderCellDef>{{'view-reservations.precio' | transloco }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.totalPrice}} </td>
+        </ng-container>
+    
+        <!-- Book Id -->
+        <ng-container matColumnDef="Disabled">
+            <th mat-header-cell *matHeaderCellDef>{{'view-reservations.discapacitado' | transloco }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.disabled}} </td>
+        </ng-container>
+
+        <!-- Name -->
+        <ng-container matColumnDef="StartDate">
+          <th mat-header-cell *matHeaderCellDef>{{'view-reservations.inicio' | transloco }}</th>
+          <td mat-cell *matCellDef="let element"> {{element.startTime}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="EndDate">
+        <th mat-header-cell *matHeaderCellDef>{{'view-reservations.final' | transloco }}</th>
+        <td mat-cell *matCellDef="let element"> {{element.endTime}} </td>
+      </ng-container>
+    
+        <!-- Name -->
+        <ng-container matColumnDef="Date">
+            <th mat-header-cell *matHeaderCellDef>{{'view-reservations.fecha' | transloco }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    
+    </table>
+    
+    <mat-paginator [pageSizeOptions]="[10, 15, 20]" showFirstLastButtons aria-label="Select page of periodic elements" class="paginator">
+    </mat-paginator>
+    
+  </div>  
+
+</app-side-nav>

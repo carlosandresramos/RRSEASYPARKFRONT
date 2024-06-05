@@ -1,0 +1,116 @@
+<app-sive-nav-client>
+  <div class="space"><app-combo></app-combo></div>
+
+  <div class="title">
+    <h1>{{'ParkingLot.BU' | transloco }}
+    </h1>
+  </div>
+
+  <div class="container">
+    <form [formGroup]="cityform">
+      <mat-form-field>
+        <mat-label>{{'ParkingLot.SE' | transloco }}</mat-label>
+        <mat-select formControlName="selectedCity" (selectionChange)="applyCityFilter()">
+          <mat-option value="">{{'ParkingLot.TO' | transloco }}</mat-option>
+          <mat-option *ngFor="let City of ListCities" value={{City.id}}>{{City.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput formControlName="filterValue" (keyup)="applyCityFilter()"
+          placeholder="Digite direccion o barrio" #input autocomplete="off">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>{{'ParkingLot.TI' | transloco }}</mat-label>
+        <mat-select formControlName="disabilityservice" (selectionChange)="applyCityFilter()">
+          <mat-option value="">{{'ParkingLot.TO' | transloco }}</mat-option>
+          <mat-option value="SI">{{'ParkingLot.DI' | transloco }}</mat-option>
+          <mat-option value="NO">{{'ParkingLot.GE' | transloco }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+
+    <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+
+      <ng-container matColumnDef="Icon">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+          <mat-icon class="icon-blue" *ngIf="element.disabilityservices === 'SI'" aria-hidden="false"
+            aria-label="Example home icon" fontIcon="accessible"></mat-icon>
+
+      </ng-container>
+
+      <ng-container matColumnDef="Name">
+        <th mat-header-cell *matHeaderCellDef> {{'ParkingLot.NOM' | transloco }} </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Adress">
+        <th mat-header-cell *matHeaderCellDef> {{'ParkingLot.DIR' | transloco }} </th>
+        <td mat-cell *matCellDef="let element"> {{element.adress}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="City">
+        <th mat-header-cell *matHeaderCellDef> {{'ParkingLot.CI' | transloco }} </th>
+        <td mat-cell *matCellDef="let element"> {{element.cityName}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="expand">
+        <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-icon-button aria-label="expand row"
+            (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+            <mat-icon *ngIf="expandedElement !== element">keyboard_arrow_down</mat-icon>
+            <mat-icon *ngIf="expandedElement === element">keyboard_arrow_up</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="expandedDetail">
+        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length">
+          <div class="example-element-detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+           
+              <div class="row">
+                <div class="column" autoAdjustWidth>
+                  <img src="data:image/*;base64,{{element.image}}" class="image" alt="Photo of a Shiba Inu">
+                  <p class="titulo-parking">{{element.info}}</p>
+                  <div>
+                    <div>
+                      <p>- {{'ParkingLot.TE' | transloco }} {{element.telephone}} </p>
+                      <p>- {{'ParkingLot.PR' | transloco }} {{element.normalPrice}} </p>
+                      <p *ngIf="element.disabilityservices === 'SI'">- {{'ParkingLot.PRD' | transloco }} {{element.normalPrice}}
+                        {{element.disabilityPrice}} </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column2">
+                  <div class="buttons-container">
+                    <button mat-fab extended color="primary" (click)="reserva(element)">
+                      <mat-icon>calendar_month</mat-icon>
+                      {{'ParkingLot.RE' | transloco }}
+                    </button>
+                    <button mat-fab extended color="accent" (click)="coordinates(element)">
+                      <mat-icon>location_on</mat-icon>
+                      {{'ParkingLot.CO' | transloco }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+      <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;" class="example-element-row"
+        [class.example-expanded-row]="expandedElement === element"
+        (click)="expandedElement = expandedElement === element ? null : element">
+      </tr>
+      <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+    </table>
+
+    <mat-paginator class="custom-paginator" [pageSizeOptions]="[10, 15, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+    </mat-paginator>
+
+  </div>
+</app-sive-nav-client>

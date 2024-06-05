@@ -1,0 +1,137 @@
+.centered-text {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.color-age {
+  background-color: #73af7c;
+  color: white;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('src\app\components\reservation\imagen\imagen_parqueadero.jpg');
+  background-size: cover;
+}
+
+.column1 {
+  margin-top: 6%;
+}
+
+.containerI {
+  margin-top: -3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: -4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 48%;
+  /* Ajusta el ancho de cada columna según sea necesario */
+  margin-left: 10%;
+}
+
+.custom-button {
+  width: 527px;
+  height: 30px;
+  background-color: #a757cc;
+  color: #ffffff;
+}
+
+.example-card {
+  width: 500px;
+ margin-bottom: 10px;
+  flex: 1;
+  padding-bottom: 0; /* Elimina el espacio interno inferior */
+}
+
+/* Estilo para la etiqueta */
+.form-label {
+  font-size: 18px;
+  color: #8f8f8f;
+  margin-bottom: 0;
+  /* Se elimina el margen inferior para que la etiqueta esté dentro del recuadro */
+  display: block;
+}
+
+/* Estilo para el contenedor (form-group) */
+.form-group {
+  background-color: #f2f2f2;
+  /* Color de fondo gris claro */
+  padding: 15px;
+  /* Relleno interno */
+  border-bottom: 2px solid #ccc;
+  /* Borde inferior de 2px sólido en color gris claro */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Cambia el estilo del contenedor al enfocarse en el campo */
+.form-group:focus-within {
+  border-color: #6c757d;
+  /* Cambia el color del borde inferior al enfocarse */
+}
+
+/* Estilo para el campo de entrada */
+.form-control {
+  padding: 0;
+  border: none;
+  /* Elimina el borde del campo */
+  width: 500px;
+  font-size: 16px;
+  outline: none;
+  /* Elimina el contorno al hacer clic */
+  background: transparent;
+  /* Fondo transparente */
+}
+
+.marginLeft {
+  margin-left: 175px;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.space {
+  margin-top: 4%;
+}
+
+.space2 {
+  margin-top: 2px;
+}
+.text{
+  margin-bottom: -50px;
+  margin-top: 10px;
+}
+
+.title {
+  padding: 5px;
+  background-color: #a757cc;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.title1{
+  font-family: Monospace, sans-serif; 
+  color: #5a0553;
+}
+
+.titleWord {
+  margin-top: 10px;
+}
+.space1{
+  text-align: right;
+  margin-top: 22px;
+  margin-right: 10px;
+}
